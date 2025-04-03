@@ -3,6 +3,7 @@
 ## :exclamation: This repo is long abandoned. It's probably way out of date, and does not work on newer systems. Please seek other alternatives. :exclamation:
 
 # Also: write your own tests!!
+
 #
 
 An easy to use testing framework for the 42 projects.
@@ -24,6 +25,7 @@ if the string is `""` or `"   "` or `"word"`. Don't rely just on `francinette` o
 ### :warning: Write your own tests, It's a very essential part of programming. :warning:
 
 ## Table of Contents
+
 1. [Purpose](#purpose)
 2. [Install](#install)
 3. [Update](#update)
@@ -31,7 +33,6 @@ if the string is `""` or `"   "` or `"word"`. Don't rely just on `francinette` o
 5. [Uninstall](#uninstall)
 6. [FAQ](#faq)
 7. [Acknowledgments](#acknowledgments)
-
 
 ## Purpose:
 
@@ -46,8 +47,8 @@ You can use it as a local test battery, to test your code.
 
 ![Example Image](doc/example.png)
 
-
 ## Install:
+
 Francinette has an automatic installer.
 
 Copy the line bellow to your console and execute it. It will automatically download the repo,
@@ -58,13 +59,13 @@ In linux it will also download and install the necessary packages for it to run.
 admin permission to do that.
 
 ```
-bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
+bash -c "$(curl -fsSL https://raw.github.com/foyez/francinette/py-3.3/bin/install.sh)"
 ```
 
 The francinette folder will be under your `$HOME` directory (`/Users/<your_username>/`)
 
-
 ## Update:
+
 Normally francinette will prompt you when there is a new version, and you can then update it.
 
 You can also force it from francinette itself:
@@ -76,9 +77,8 @@ You can also force it from francinette itself:
 If the above does not work you can also execute the command bellow:
 
 ```
-bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/update.sh)"
+bash -c "$(curl -fsSL https://raw.github.com/foyez/francinette/py-3.3/bin/update.sh)"
 ```
-
 
 ## Running:
 
@@ -102,8 +102,8 @@ libft $> paco memset isalpha memcpy  # Executes only the specified tests
 ```
 
 The name of the folder is not important. What is important is that you have a `Makefile`
-that contains the name of the project (for example `libft`), or the expected delivery files. 
-If there is no `Makefile` or delivery files are not present `francinette` will not know 
+that contains the name of the project (for example `libft`), or the expected delivery files.
+If there is no `Makefile` or delivery files are not present `francinette` will not know
 what project to execute.
 
 ```
@@ -120,13 +120,12 @@ the magic happens.
 
 Log files can be found in: `~/francinette/logs`
 
-
 ## Uninstall
 
 To uninstall `francinette` delete the `francinette` folder. It should be located under your
 `$HOME` directory (`/Users/<your_username>/` or `/home/<your_username>/`)
 
-You also need to remove the automatically created aliases. For that open your `~/.zshrc` 
+You also need to remove the automatically created aliases. For that open your `~/.zshrc`
 file and delete the lines:
 
 ```
@@ -169,9 +168,9 @@ it gives a Timeout.
 
 #### I've installed francinette, but when I try to execute it I get the message: `command not found: francinette`
 
-In the install script I try to set two alias to for `francinette`: `francinette` and `paco`. 
-If you are in MacOS I do that by adding two lines to the `.zshrc` file, and to `.bashrc` in 
-linux. If by some chance you are using other shell, or for some other reason it does not work, 
+In the install script I try to set two alias to for `francinette`: `francinette` and `paco`.
+If you are in MacOS I do that by adding two lines to the `.zshrc` file, and to `.bashrc` in
+linux. If by some chance you are using other shell, or for some other reason it does not work,
 You can try to set the aliases yourself, by adding:
 
 ```
@@ -183,12 +182,12 @@ Now it should work. If it does not, don't be afraid to contact me.
 
 ## Acknowledgments
 
-* To 42 for providing me this opportunity
-* To [Tripouille](https://github.com/Tripouille) for [libftTester](https://github.com/Tripouille/libftTester), [gnlTester](https://github.com/Tripouille/gnlTester) and [printfTester](https://github.com/Tripouille/printfTester)
-* To [jtoty](https://github.com/jtoty) and [y3ll0w42](https://github.com/y3ll0w42) for [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine)
-* To [alelievr](https://github.com/alelievr) for [libft-unit-test](https://github.com/alelievr/libft-unit-test) and [printf-unit-test](https://github.com/alelievr/printf-unit-test)
-* To [cacharle](https://github.com/cacharle) for [ft_printf_test](https://github.com/cacharle/ft_printf_test)
-* To [ombhd](https://github.com/ombhd) for [Cleaner_42](https://github.com/ombhd/Cleaner_42)
-* To [arsalas](https://github.com/arsalas) for the help in the minitalk tester
-* To [vfurmane](https://github.com/vfurmane) for [pipex-tester](https://github.com/vfurmane/pipex-tester)
-* To [gmarcha](https://github.com/gmarcha) for [pipexMedic](https://github.com/gmarcha/pipexMedic)
+- To 42 for providing me this opportunity
+- To [Tripouille](https://github.com/Tripouille) for [libftTester](https://github.com/Tripouille/libftTester), [gnlTester](https://github.com/Tripouille/gnlTester) and [printfTester](https://github.com/Tripouille/printfTester)
+- To [jtoty](https://github.com/jtoty) and [y3ll0w42](https://github.com/y3ll0w42) for [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine)
+- To [alelievr](https://github.com/alelievr) for [libft-unit-test](https://github.com/alelievr/libft-unit-test) and [printf-unit-test](https://github.com/alelievr/printf-unit-test)
+- To [cacharle](https://github.com/cacharle) for [ft_printf_test](https://github.com/cacharle/ft_printf_test)
+- To [ombhd](https://github.com/ombhd) for [Cleaner_42](https://github.com/ombhd/Cleaner_42)
+- To [arsalas](https://github.com/arsalas) for the help in the minitalk tester
+- To [vfurmane](https://github.com/vfurmane) for [pipex-tester](https://github.com/vfurmane/pipex-tester)
+- To [gmarcha](https://github.com/gmarcha) for [pipexMedic](https://github.com/gmarcha/pipexMedic)
