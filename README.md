@@ -1,5 +1,7 @@
 # Francinette
 
+## Make compatible python 3.3 or later
+
 ## :exclamation: This repo is long abandoned. It's probably way out of date, and does not work on newer systems. Please seek other alternatives. :exclamation:
 
 # Also: write your own tests!!
