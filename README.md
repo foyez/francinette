@@ -32,6 +32,7 @@ if the string is `""` or `"   "` or `"word"`. Don't rely just on `francinette` o
 2. [Install](#install)
 3. [Update](#update)
 4. [Running](#Running)
+5. [Commands](#Commands)
 5. [Uninstall](#uninstall)
 6. [FAQ](#faq)
 7. [Acknowledgments](#acknowledgments)
@@ -121,6 +122,22 @@ access this directory for anything. But if you run into unexpected problems, thi
 the magic happens.
 
 Log files can be found in: `~/francinette/logs`
+
+## Commands
+
+| Option / Argument        | Short Form | Type        | Description                                                                                           | Example Usage                          |
+|--------------------------|------------|-------------|-------------------------------------------------------------------------------------------------------|----------------------------------------|
+| `git_repo`               | –          | Positional  | Uses this repository to clone the exercises.                                                          | `francinette https://github.com/user/repo` |
+| `exercise`               | –          | Positional  | Executes the passed tests.                                                                            | `paco ft_printf get_next_line`         |
+| `--verbose`              | `-v`       | Flag        | Activates verbose mode (debug output).                                                                | `francinette -v`                        |
+| `--update`               | `-u`       | Flag        | Forces francinette to update.                                                                         | `paco -u`                         |
+| `--strict`               | `-s`       | Flag        | Strict memory allocation checks (size & nulls).                                                       | `francinette --strict` or `paco -s`     |
+| `--mandatory`            | `-m`       | Flag        | Executes only the mandatory tests.                                                                    | `paco -m`                        |
+| `--bonus`                | `-b`       | Flag        | Executes only the bonus tests.                                                                        | `paco -b`                          |
+| `--timeout`              | `-tm`      | Value       | Sets a custom timeout (in seconds).                                                                   | `paco -tm 15`             |
+| `--clean`                | `-c`       | Flag        | Cleans caches and temporary files.                                                                    | `paco -c`                               |
+| `--ignore-norm`          | `-in`      | Flag        | Skips norminette (code style check).                                                                  | `francinette -in`            |
+| `--testers`              | `-t`       | List (opt.) | Runs specified testers. If empty, prompts the user. Must be last argument.                            | `paco -t`            |
 
 ## Uninstall
 
